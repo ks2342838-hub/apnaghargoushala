@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>अपना घर गौशाला - उदयपुर</title>
-    <!-- Connecting local style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,8 +15,9 @@
 
     <!-- नेविगेशन बार -->
     <nav class="navbar">
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <span style="font-size: 1.8rem;">🐄</span>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <!-- असली लोगो लिंक जोड़ा गया -->
+            <img src="https://i.postimg.cc/9QHQLsnD/Screenshot-2026-06-10-125744.png" alt="Logo" class="nav-logo">
             <div>
                 <h2 style="color: #5c3a21; font-size: 1.4rem;">अपना घर गौशाला</h2>
                 <p style="color: #ff6600; font-size: 0.8rem; font-weight: bold; margin-top: -3px;">परशुराम चौराहा, उदयपुर</p>
@@ -31,7 +31,7 @@
         </div>
     </nav>
 
-    <!-- हीरो सेक्शन -->
+    <!-- हीरो सेक्शन (बैकग्राउंड इमेज अब CSS में सेट है) -->
     <section id="home" class="hero">
         <h1>बेसहारा और बीमार गायों का एकमात्र सहारा</h1>
         <p>"अपना घर गौशाला" उदयपुर में 150 से अधिक मूक और बेसहारा गोवंश की निःस्वार्थ सेवा, उपचार और आश्रय का पावन कार्य कर रही है। आपके छोटे से सहयोग से उन्हें एक नया जीवन मिल सकता है।</p>
@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <!-- आंकड़े (Stats) -->
+    <!-- आंकड़े -->
     <div class="stats-container">
         <div class="stat-card">
             <h3>150+</h3>
@@ -65,15 +65,19 @@
                 <p style="color: #666; margin-bottom: 15px;"><strong>अपना घर गौशाला</strong> उदयपुर के परशुराम चौराहा, सेंट्रल एरिया में स्थित एक प्रमुख गौ-सेवा संस्थान है। हमारा मुख्य उद्देश्य समाज में उपेक्षा का शिकार हुई, लाचार और दुर्घटनाग्रस्त गायों को सुरक्षित आश्रय देकर उनका उचित उपचार करना है।</p>
                 <p style="color: #666;">वर्तमान में इस परिसर के अंदर 150 से अधिक गायों की देखरेख की जा रही है। यहाँ चौबीसों घंटे सेवादार और चिकित्सा की व्यवस्था रहती है जो दर्द से तड़पती हुई बेजुबान गायों का निःशुल्क इलाज और सेवा करते हैं।</p>
                 
-                <!-- संस्थापक विवरण -->
-                <div class="founder-card">
-                    <h4>संस्थापक (Founder): हार्दिक जी मेनारिया</h4>
-                    <p style="font-size: 0.9rem; margin: 5px 0 15px 0; opacity: 0.8;">📞 संपर्क संख्या: +91 7822817773</p>
-                    <p style="font-style: italic; opacity: 0.95;">"गायों की रक्षा और सेवा करना ही हमारे जीवन का सबसे बड़ा संकल्प और कर्तव्य है।"</p>
+                <!-- संस्थापक विवरण (अस्ली फाउंडर फोटो के साथ) -->
+                <div class="founder-card" style="display: flex; align-items: center; gap: 20px;">
+                    <img src="https://i.postimg.cc/25sY5WRJ/Screenshot-2026-06-05-131408.png" alt="हार्दिक जी मेनारिया" style="width: 85px; height: 85px; border-radius: 50%; object-fit: cover; border: 3px solid #ff6600; background: white;">
+                    <div>
+                        <h4>संस्थापक (Founder): हार्दिक जी मेनारिया</h4>
+                        <p style="font-size: 0.9rem; margin: 5px 0 5px 0; opacity: 0.8;">📞 संपर्क संख्या: +91 7822817773</p>
+                        <p style="font-style: italic; opacity: 0.95;">"गायों की रक्षा and सेवा करना ही हमारे जीवन का सबसे बड़ा संकल्प और कर्तव्य है।"</p>
+                    </div>
                 </div>
             </div>
             <div>
-                <img src="https://unsplash.com" alt="Gau Seva" class="about-img">
+                <!-- गौशाला की जगह भी सुंदर बैकग्राउंड फोटो इस्तेमाल की है -->
+                <img src="https://i.postimg.cc/fR5kkBB2/Chat-GPT-Image-Jun-5-2026-02-07-14-PM.png" alt="Gau Seva" class="about-img">
             </div>
         </div>
     </section>
@@ -114,8 +118,8 @@
                 <h3 style="color: #5c3a21;">Scan QR Code to Pay</h3>
                 <p style="font-size: 0.85rem; color: #888; margin-top: 5px;">Google Pay, PhonePe, Paytm से स्कैन करें</p>
                 
-                <!-- ऑटो-जेनरेटेड क्यूआर कोड जो सीधे हार्दिक जी के नंबर पर काम करेगा -->
-                <img src="https://qrserver.com" alt="QR Code" class="qr-code">
+                <!-- असली स्कैनर इमेज लिंक जोड़ा गया -->
+                <img src="https://i.postimg.cc/sgG0gNjv/Screenshot-2026-06-05-134030.png" alt="QR Code" class="qr-code">
                 
                 <p style="font-weight: bold; color: #5c3a21; background: #fff5e6; padding: 8px 15px; border-radius: 8px; border: 1px solid #ffe0b3;">
                     UPI ID: 7822817773@paytm
@@ -125,13 +129,19 @@
     </section>
 
     <!-- फुटर -->
-    <footer style="background: #261405; color: #aaa; text-align: center; padding: 30px 20px; font-size: 0.9rem; border-t: 1px solid rgba(255,255,255,0.05);">
-        <p style="color: #fff; font-weight: bold; margin-bottom: 5px;">अपना घर गौशाला - उदयपुर</p>
-        <p>परशुराम चौराहा, सेंट्रल एरिया, उदयपुर (राजस्थान) 313002</p>
-        <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 सर्वाधिकार सुरक्षित।</p>
+    <footer style="background: #261405; color: #aaa; text-align: center; padding: 40px 20px; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: #fff; font-weight: bold; margin-bottom: 5px; font-size: 1.2rem;">अपना घर गौशाला - उदयपुर</p>
+        <p style="margin-bottom: 15px;">परशुराम चौराहा, सेंट्रल एरिया, उदयपुर (राजस्थान) 313002</p>
+        
+        <!-- असली इंस्टाग्राम लिंक जोड़ा गया -->
+        <div style="margin: 15px 0;">
+            <a href="https://www.instagram.com/apna_ghar_goushala_udaipur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color: #ff6600; text-decoration: none; font-weight: bold; font-size: 1rem; background: rgba(255,255,255,0.08); padding: 8px 15px; border-radius: 20px;">
+                📸 इंस्टाग्राम पर फॉलो करें
+            </a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.4;">&copy; 2026 सर्वाधिकार सुरक्षित।</p>
     </footer>
 
-    <!-- Connecting local script.js -->
     <script src="script.js"></script>
 </body>
 </html>
