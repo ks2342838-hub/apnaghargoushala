@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,11 +18,20 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 15px 5%;
+    padding: 10px 5%;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* लोगो साइज फिक्स */
+.nav-logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ff6600;
 }
 
 .nav-links a {
@@ -45,12 +54,12 @@ body {
     box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
 }
 
-/* Hero Section with Live Background */
+/* हीरो सेक्शन (असली बैकग्राउंड इमेज लिंक एडेड) */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com');
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://i.postimg.cc/fR5kkBB2/Chat-GPT-Image-Jun-5-2026-02-07-14-PM.png');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +77,7 @@ body {
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     max-width: 800px;
     margin-bottom: 30px;
     color: #f0f0f0;
@@ -88,15 +97,15 @@ body {
 
 .stat-card {
     background: white;
-    padding: 30px;
+    padding: 25px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     border-top: 5px solid #ff6600;
 }
 
 .stat-card h3 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #5c3a21;
     margin-bottom: 5px;
 }
@@ -118,11 +127,13 @@ body {
 @media(max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2rem; }
+    .navbar { flex-direction: column; gap: 10px; text-align: center; }
+    .nav-links a { margin: 0 10px; font-size: 0.9rem; }
 }
 
 .about-img {
     width: 100%;
-    height: 350px;
+    height: 380px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -131,10 +142,11 @@ body {
 .founder-card {
     background: linear-gradient(135deg, #4a2c11, #261405);
     color: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
     margin-top: 25px;
     border-left: 6px solid #ff6600;
+    width: 100%;
 }
 
 /* Donation UI Details */
@@ -147,14 +159,18 @@ body {
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
+@media(max-width: 768px) {
+    .donation-box { grid-template-columns: 1fr; }
+}
+
 .donation-left {
     background: #5c3a21;
     color: white;
-    padding: 50px;
+    padding: 40px;
 }
 
 .donation-right {
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,13 +178,14 @@ body {
 }
 
 .qr-code {
-    width: 200px;
-    height: 200px;
-    margin: 20px 0;
-    border: 2px solid #ff6600;
-    padding: 10px;
-    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
     background: white;
+    object-fit: contain;
 }
 
 /* Floating WhatsApp Button */
@@ -178,7 +195,7 @@ body {
     right: 30px;
     background-color: #25d366;
     color: white;
-    padding: 15px 25px;
+    padding: 12px 22px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
@@ -187,4 +204,5 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 0.9rem;
 }
