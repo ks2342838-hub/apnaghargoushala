@@ -4,115 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>अपना घर गौशाला - उदयपुर</title>
-    <!-- Tailwind CSS for Premium Design -->
-    <script src="https://tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
-    <!-- Google Fonts for Clean Hindi Typography -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Poppins', 'Noto Serif Devanagari', sans-serif; }
-        .hindi-text { font-family: 'Noto Serif Devanagari', serif; }
-        html { scroll-behavior: smooth; }
-    </style>
+    <!-- Connecting local style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-amber-50/20 text-gray-800 antialiased">
+<body>
 
-    <!-- FLOATING WHATSAPP BUTTON (व्हाट्सएप ग्रुप लिंक) -->
-    <a href="https://whatsapp.com" target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 transition-all duration-300 transform hover:scale-110 z-50 flex items-center justify-center group">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-        <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 ease-in-out font-medium whitespace-nowrap text-sm">गौ-सेवा ग्रुप से जुड़ें</span>
+    <!-- व्हाट्सएप फ्लोटिंग बटन -->
+    <a href="https://whatsapp.com" target="_blank" class="whatsapp-float">
+        💬 व्हाट्सएप ग्रुप से जुड़ें
     </a>
 
-    <!-- नेविगेशन बार (NAVBAR) -->
-    <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-orange-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl shadow-md shadow-orange-500/30">
-                        <i class="fa-solid fa-cow"></i>
-                    </div>
-                    <div>
-                        <span class="font-bold text-xl sm:text-2xl text-amber-950 tracking-wide block hindi-text">अपना घर गौशाला</span>
-                        <span class="text-[10px] sm:text-xs text-orange-600 font-semibold uppercase tracking-wider block -mt-1">परशुराम चौराहा, उदयपुर</span>
-                    </div>
-                </div>
-                <div class="hidden lg:flex items-center space-x-8 font-medium text-sm">
-                    <a href="#home" class="text-amber-950 hover:text-orange-600 transition">मुख्य पृष्ठ</a>
-                    <a href="#about" class="text-amber-950 hover:text-orange-600 transition">हमारे बारे में</a>
-                    <a href="#activities" class="text-amber-950 hover:text-orange-600 transition">गौ-सेवा कार्य</a>
-                    <a href="#events" class="text-amber-950 hover:text-orange-600 transition">सांस्कृतिक आयोजन</a>
-                    <a href="#contact" class="text-amber-950 hover:text-orange-600 transition">संपर्क करें</a>
-                    <a href="#donate" class="bg-gradient-to-r from-orange-500 to-amber-600 text-white px-6 py-3 rounded-full hover:shadow-lg hover:shadow-orange-500/20 transition transform hover:scale-105 font-semibold">सहयोग राशि दें <i class="fa-solid fa-heart ml-1 text-red-200"></i></a>
-                </div>
+    <!-- नेविगेशन बार -->
+    <nav class="navbar">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.8rem;">🐄</span>
+            <div>
+                <h2 style="color: #5c3a21; font-size: 1.4rem;">अपना घर गौशाला</h2>
+                <p style="color: #ff6600; font-size: 0.8rem; font-weight: bold; margin-top: -3px;">परशुराम चौराहा, उदयपुर</p>
             </div>
+        </div>
+        <div class="nav-links">
+            <a href="#home">मुख्य पृष्ठ</a>
+            <a href="#about">हमारे बारे में</a>
+            <a href="#activities">गौ-सेवा कार्य</a>
+            <a href="#donate" class="donate-btn">सहयोग राशि दें</a>
         </div>
     </nav>
 
-    <!-- हीरो सेक्शन (HERO SECTION) -->
-    <section id="home" class="relative bg-cover bg-center h-[600px] flex items-center" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://unsplash.com');">
-        <div class="max-w-5xl mx-auto text-center text-white px-4">
-            <span class="bg-orange-500 text-white text-xs uppercase font-bold tracking-widest px-5 py-2 rounded-full shadow-md">गायों की सेवा ही ईश्वर की सच्ची पूजा है</span>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mt-6 mb-6 leading-tight text-shadow hindi-text">बीमार, असहाय और दुर्घटनाग्रस्त गायों का एकमात्र सहारा</h1>
-            <p class="text-base sm:text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto font-light">"अपना घर गौशाला" उदयपुर में 150 से अधिक मूक और बेसहारा गोवंश की निःस्वार्थ सेवा, उपचार और आश्रय का पावन कार्य कर रही है।</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#donate" class="bg-gradient-to-r from-orange-500 to-amber-600 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-orange-500/30 transition transform hover:-translate-y-0.5">अभी ऑनलाइन दान करें</a>
-                <a href="https://whatsapp.com" target="_blank" class="bg-white text-amber-950 text-lg font-semibold px-8 py-4 rounded-full hover:bg-gray-50 shadow-lg transition flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i> व्हाट्सएप ग्रुप से जुड़ें</a>
+    <!-- हीरो सेक्शन -->
+    <section id="home" class="hero">
+        <h1>बेसहारा और बीमार गायों का एकमात्र सहारा</h1>
+        <p>"अपना घर गौशाला" उदयपुर में 150 से अधिक मूक और बेसहारा गोवंश की निःस्वार्थ सेवा, उपचार और आश्रय का पावन कार्य कर रही है। आपके छोटे से सहयोग से उन्हें एक नया जीवन मिल सकता है।</p>
+        <div style="display: flex; gap: 15px;">
+            <a href="#donate" class="donate-btn" style="text-decoration: none; padding: 15px 30px; font-size: 1.1rem;">अभी ऑनलाइन दान करें</a>
+        </div>
+    </section>
+
+    <!-- आंकड़े (Stats) -->
+    <div class="stats-container">
+        <div class="stat-card">
+            <h3>150+</h3>
+            <p>आश्रित गोवंश</p>
+        </div>
+        <div class="stat-card">
+            <h3>24/7</h3>
+            <p>निःशुल्क चिकित्सा</p>
+        </div>
+        <div class="stat-card">
+            <h3>100%</h3>
+            <p>स्थानीय जन सहयोग</p>
+        </div>
+    </div>
+
+    <!-- हमारे बारे में -->
+    <section id="about" class="section">
+        <div class="about-grid">
+            <div>
+                <span style="color: #ff6600; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">गौशाला का परिचय</span>
+                <h2 style="font-size: 2.2rem; color: #5c3a21; margin: 10px 0 20px 0;">अपना घर गौशाला, उदयपुर</h2>
+                <p style="color: #666; margin-bottom: 15px;"><strong>अपना घर गौशाला</strong> उदयपुर के परशुराम चौराहा, सेंट्रल एरिया में स्थित एक प्रमुख गौ-सेवा संस्थान है। हमारा मुख्य उद्देश्य समाज में उपेक्षा का शिकार हुई, लाचार और दुर्घटनाग्रस्त गायों को सुरक्षित आश्रय देकर उनका उचित उपचार करना है।</p>
+                <p style="color: #666;">वर्तमान में इस परिसर के अंदर 150 से अधिक गायों की देखरेख की जा रही है। यहाँ चौबीसों घंटे सेवादार और चिकित्सा की व्यवस्था रहती है जो दर्द से तड़पती हुई बेजुबान गायों का निःशुल्क इलाज और सेवा करते हैं।</p>
+                
+                <!-- संस्थापक विवरण -->
+                <div class="founder-card">
+                    <h4>संस्थापक (Founder): हार्दिक जी मेनारिया</h4>
+                    <p style="font-size: 0.9rem; margin: 5px 0 15px 0; opacity: 0.8;">📞 संपर्क संख्या: +91 7822817773</p>
+                    <p style="font-style: italic; opacity: 0.95;">"गायों की रक्षा और सेवा करना ही हमारे जीवन का सबसे बड़ा संकल्प और कर्तव्य है।"</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://unsplash.com" alt="Gau Seva" class="about-img">
             </div>
         </div>
     </section>
 
-    <!-- मुख्य आंकड़े (STATS BAR) -->
-    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4 -mt-16 relative z-10">
-        <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-orange-500 transform hover:-translate-y-1 transition">
-            <div class="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center text-orange-500 text-xl mx-auto mb-3"><i class="fa-solid fa-cow"></i></div>
-            <h3 class="text-3xl font-bold text-amber-950">150+</h3>
-            <p class="text-xs text-gray-500 font-bold mt-1 uppercase tracking-wider">आश्रित गोवंश</p>
+    <!-- सेवा कार्य -->
+    <section id="activities" class="section" style="background: #fdf6ec; padding: 40px; border-radius: 20px;">
+        <h2 style="text-align: center; color: #5c3a21; margin-bottom: 40px;">गौशाला में रोजाना होने वाले सेवा कार्य</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <h3 style="color: #ff6600; margin-bottom: 10px;">🚨 आपातकालीन सहायता</h3>
+                <p style="color: #666; font-size: 0.95rem;">उदयपुर शहर में किसी भी गाय के बीमार या दुर्घटनाग्रस्त होने की सूचना मिलने पर हमारे सेवादार तुरंत मदद के लिए पहुँचते हैं।</p>
+            </div>
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <h3 style="color: #ff6600; margin-bottom: 10px;">🩺 उचित चिकित्सा व्यवस्था</h3>
+                <p style="color: #666; font-size: 0.95rem;">बीमार, फ्रैक्चर या गंभीर रूप से घायल गोवंश का सुरक्षित इलाज और नियमित पट्टी-दवा की उचित व्यवस्था अनुभवी डॉक्टरों द्वारा की जाती है।</p>
+            </div>
+            <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <h3 style="color: #ff6600; margin-bottom: 10px;">🌾 हरा चारा व दलिया</h3>
+                <p style="color: #666; font-size: 0.95rem;">आश्रित गायों के बेहतर स्वास्थ्य के लिए हर सुबह-शाम पौष्टिक दलिया, खल और शुद्ध हरे चारे का वितरण भरपूर मात्रा में किया जाता है।</p>
+            </div>
         </div>
-        <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-emerald-500 transform hover:-translate-y-1 transition">
-            <div class="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-500 text-xl mx-auto mb-3"><i class="fa-solid fa-kit-medical"></i></div>
-            <h3 class="text-3xl font-bold text-amber-950">24/7</h3>
-            <p class="text-xs text-gray-500 font-bold mt-1 uppercase tracking-wider">निःशुल्क चिकित्सा</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-blue-500 transform hover:-translate-y-1 transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-xl mx-auto mb-3"><i class="fa-solid fa-users"></i></div>
-            <h3 class="text-3xl font-bold text-amber-950">100%</h3>
-            <p class="text-xs text-gray-500 font-bold mt-1 uppercase tracking-wider">स्थानीय जन सहयोग</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-purple-500 transform hover:-translate-y-1 transition">
-            <div class="w-12 h-12 bg-purple-50 rounded-full flex items-center justify-center text-purple-500 text-xl mx-auto mb-3"><i class="fa-solid fa-clock"></i></div>
-            <h3 class="text-3xl font-bold text-amber-950">निरंतर</h3>
-            <p class="text-xs text-gray-500 font-bold mt-1 uppercase tracking-wider">सेवा और समर्पण</p>
-        </div>
-    </div>
+    </section>
 
-    <!-- हमारे बारे में (ABOUT SECTION) -->
-    <section id="about" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="text-orange-600 font-bold text-sm uppercase tracking-widest block mb-2">गौशाला का परिचय</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-amber-950 mb-6 hindi-text">अपना घर गौशाला, उदयपुर</h2>
-                <p class="text-gray-600 leading-relaxed mb-6 text-base">
-                    <strong>अपना घर गौशाला</strong> उदयपुर के परशुराम चौराहा, सेंट्रलエリア (सेंट्रल एरिया) में स्थित एक प्रमुख गौ-सेवा संस्थान है. हमारा मुख्य उद्देश्य समाज में उपेक्षित, लाचार और दुर्घटनाग्रस्त गायों को सुरक्षित आश्रय देकर उनका उचित उपचार करना है.
-                </p>
-                <p class="text-gray-600 leading-relaxed mb-8 text-base">
-                    वर्तमान में इस परिसर के अंदर 150 से अधिक गायों की देखरेख की जा रही है. यहाँ चौबीसों घंटे सेवादार और चिकित्सा की व्यवस्था रहती है जो दर्द से तड़पती हुई बेजुबान गायों का निःशुल्क इलाज और सेवा करते हैं.
-                </p>
-
-                <!-- संस्थापक कार्ड (FOUNDER CARD) -->
-                <div class="bg-gradient-to-r from-amber-900 to-amber-950 text-white p-6 rounded-2xl shadow-lg flex flex-col sm:flex-row items-center gap-6 border-b-8 border-orange-500">
-                    <img src="https://unsplash.com" alt="Hardik Ji Menariya" class="w-20 h-20 rounded-full object-cover border-4 border-white/20 shadow-md">
-                    <div>
-                        <span class="text-xs text-orange-400 uppercase font-bold tracking-widest">संस्थापक / Founder</span>
-                        <h4 class="text-xl font-bold hindi-text mt-0.5">हार्दिक जी मेनारिया</h4>
-                        <p class="text-xs text-gray-300 mt-1 mb-3"><i class="fa-solid fa-phone mr-1 text-orange-400"></i> संपर्क: +91 7822817773</p>
-                        <p class="text-sm italic opacity-90 text-amber-100 font-light">"गायों की रक्षा और सेवा करना ही हमारे जीवन का सबसे बड़ा संकल्प और कर्तव्य है।"</p>
-                    </div>
+    <!-- दान एवं स्कैनर -->
+    <section id="donate" class="section">
+        <div class="donation-box">
+            <div class="donation-left">
+                <h2>गौ-सेवा फंड में सहयोग राशि प्रदान करें</h2>
+                <p style="margin: 20px 0 30px 0; opacity: 0.9; font-size: 1rem;">आपका थोड़ा सा सहयोग इन मूक पशुओं के चारे, पानी और आवश्यक दवाओं के काम आता है। आप सीधे हमारे बैंक खाते में या दिए गए क्यूआर कोड को स्कैन करके राशि भेज सकते हैं।</p>
+                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2);">
+                    <h5 style="color: #ff6600; margin-bottom: 5px; font-size: 1rem;">बैंक खाता विवरण (Bank Details)</h5>
+                    <p style="font-weight: bold; font-size: 1.1rem;">अपना घर गौशाला</p>
+                    <p style="margin-top: 5px; font-size: 0.95rem;">खाता संख्या: 9876543210123 (SBI Bank)</p>
+                    <p style="font-size: 0.95rem;">IFSC कोड: SBIN0000123</p>
                 </div>
             </div>
-            
-            <!-- गौशाला गैलरी इमेज -->
-            <div class="space-y-6">
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="https://unsplash.com" alt="Gau Seva Udaipur" class="w-full object-cover h-[350px]">
+            <div class="donation-right">
+                <h3 style="color: #5c3a21;">Scan QR Code to Pay</h3>
+                <p style="font-size: 0.85rem; color: #888; margin-top: 5px;">Google Pay, PhonePe, Paytm से स्कैन करें</p>
+                
+                <!-- ऑटो-जेनरेटेड क्यूआर कोड जो सीधे हार्दिक जी के नंबर पर काम करेगा -->
+                <img src="https://qrserver.com" alt="QR Code" class="qr-code">
+                
+                <p style="font-weight: bold; color: #5c3a21; background: #fff5e6; padding: 8px 15px; border-radius: 8px; border: 1px solid #ffe0b3;">
+                    UPI ID: 7822817773@paytm
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- फुटर -->
+    <footer style="background: #261405; color: #aaa; text-align: center; padding: 30px 20px; font-size: 0.9rem; border-t: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: #fff; font-weight: bold; margin-bottom: 5px;">अपना घर गौशाला - उदयपुर</p>
+        <p>परशुराम चौराहा, सेंट्रल एरिया, उदयपुर (राजस्थान) 313002</p>
+        <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 सर्वाधिकार सुरक्षित।</p>
+    </footer>
+
+    <!-- Connecting local script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
